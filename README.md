@@ -56,16 +56,16 @@ __Deployment__: Easily deployable on cloud platforms like Heroku, AWS, or Google
   - MySQL
   
 - Database Setup:
-  - Configure database properties in application.properties:
+  - Configure database properties in application.properties:  
   `spring.datasource.url=jdbc:mysql://localhost:3306/customer_connect`  
   `spring.datasource.username=your_username`  
   `spring.datasource.password=your_password`   
-  - Replace the __your_username__ and __your_password__ fields with your MySQL username and password.
+  - Replace the __your_username__ and __your_password__ fields with your MySQL username and password.  
 
-  - Google Cloud Setup:
-  `spring.security.oauth2.client.registration.google.client-id={your_registration_id}`
-  `spring.security.oauth2.client.registration.google.client-secret={your_client_secret_id}`
-  - Replace the registration id and client id with your actual id which can be obtained from [Google Cloud Console](https://console.cloud.google.com/apis/credentials/consent?project=watchful-bonus-434316-h4).
+ - Google Cloud Setup:  
+   - `spring.security.oauth2.client.registration.google.client-id={your_registration_id}`
+   - `spring.security.oauth2.client.registration.google.client-secret={your_client_secret_id}`
+   - Replace the registration id and client id with your actual id which can be obtained from [Google Cloud Console](https://console.cloud.google.com/apis/credentials/consent?project=watchful-bonus-434316-h4).
 
  ## Contribution
   Feel free to fork this repository and contribute by submitting pull requests. For major changes, please open an issue first to discuss what you would like to change.
