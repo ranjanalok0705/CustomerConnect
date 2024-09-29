@@ -1,4 +1,4 @@
-FROM maven:3.8.7-openjdk-17 as build
+FROM maven:3.8-openjdk-18 as build docker 
 
 COPY s. .
 RUN mvn clean package -DskipTest
