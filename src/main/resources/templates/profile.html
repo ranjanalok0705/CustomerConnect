@@ -71,7 +71,10 @@
                     <div class="card">
                         <div class="card-body">
                             <center class="m-t-30">
-                                <img th:if="${profile.oathUserImageLink != null}" th:src="${profile.oathUserImageLink}" class="img-circle" width="150" />
+<!--                                <img th:if="${profile.oathUserImageLink != null}" th:src="${profile.oathUserImageLink}" class="img-circle" width="150" />-->
+                                <img th:src="${profile.oathUserImageLink != null ? profile.oathUserImageLink : '/C:\Users\alokr\OneDrive\Desktop\Customer Connect\src\main\resources\static\images\5.jpg'}"
+                                     class="img-circle" width="150" />
+
                                 <h4 class="card-title m-t-10" th:text="${user.username}"></h4>
                                 <h6 class="card-subtitle" th:text="${profile.position}"></h6>
                             </center>
