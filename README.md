@@ -3,8 +3,8 @@ This is a full-stack web application built using Java Spring Boot MVC, Thymeleaf
 The application is designed to manage customer interactions, tasks, appointments, and communications, providing a comprehensive solution for customer relationship management (CRM).
 The project includes a responsive front-end with seamless navigation, as well as a secure back-end for managing data storage and business logic.
 
-## Features
-__User Authentication and Authorization__: Secure login system with role-based access control.
+## Features 
+__User Authentication and Authorization__: Secure login system with role-based access control. 
 
 __Customer Management__: Add, edit, and view customer details including contacts, addresses, and communication history.  
 
