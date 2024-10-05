@@ -4,7 +4,7 @@ The application is designed to manage customer interactions, tasks, appointments
 The project includes a responsive front-end with seamless navigation, as well as a secure back-end for managing data storage and business logic.
 
 ## Features 
-__User Authentication and Authorization__: Secure login system with role-based access control. 
+__User Authentication and Authorization__: Secure login system with role-based access control.  
 
 __Customer Management__: Add, edit, and view customer details including contacts, addresses, and communication history.  
  
