@@ -6,7 +6,7 @@ The project includes a responsive front-end with seamless navigation, as well as
 ## Features 
 __User Authentication and Authorization__: Secure login system with role-based access control.  
 
-__Customer Management__: Add, edit, and view customer details including contacts, addresses, and communication history.  
+__Customer Management__: Add, edit, and view customer details including contacts, addresses, and communication history.
  
 __Task & Appointment Scheduling:__ Manage customer tasks and appointments, integrated with Google Calendar.  
 
