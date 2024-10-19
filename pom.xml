@@ -15,8 +15,10 @@
 	<packaging>war</packaging>
 	<description>Crm System</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>17</java.version>
+		<!--suppress UnresolvedMavenProperty -->
 		<sql.name>${SQL_NAME}</sql.name>
+		<!--suppress UnresolvedMavenProperty -->
 		<sql.password>${SQL_PASSWORD}</sql.password>
 	</properties>
 	<dependencies>

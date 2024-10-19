@@ -136,95 +136,95 @@
                             <div class="tab-pane" id="settings" role="tabpanel">
                                 <div class="card-body">
                                     <form th:object="${profile}" th:action="@{/employee/profile/update}" method="post">
-                                        <input type="hidden" name="id" th:field="*{id}">
-                                        <input th:if="${profile.oathUserImageLink != null}" type="hidden" name="oathUserImageLink" th:field="*{oathUserImageLink}">
+                                        <input type="hidden" name="id" th:field="${id}">
+                                        <input th:if="${profile.oathUserImageLink != null}" type="hidden" name="oathUserImageLink" th:field="${oathUserImageLink}">
                                         <label class="m-t-20" for="firstName">First Name:</label>
                                         <div class="input-group">
-                                            <input type="text" id="firstName" th:field="*{firstName}" class="form-control">
+                                            <input type="text" id="firstName" th:field="${firstName}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('firstName')}" th:errors="${firstName}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="lastName">Last Name:</label>
                                         <div class="input-group">
-                                            <input type="text" id="lastName" th:field="*{lastName}" class="form-control">
+                                            <input type="text" id="lastName" th:field="${lastName}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('lastName')}" th:errors="${lastName}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="position">Position:</label>
                                         <div class="input-group">
-                                            <input type="text" id="position" th:field="*{position}" class="form-control">
+                                            <input type="text" id="position" th:field="${position}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('position')}" th:errors="*{position}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('position')}" th:errors="${position}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="country">Country:</label>
                                         <div class="input-group">
-                                            <input type="text" id="country" th:field="*{country}" class="form-control">
+                                            <input type="text" id="country" th:field="${country}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('country')}" th:errors="*{country}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('country')}" th:errors="${country}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="address">Address:</label>
                                         <div class="input-group">
-                                            <input type="text" id="address" th:field="*{address}" class="form-control">
+                                            <input type="text" id="address" th:field="${address}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('address')}" th:errors="*{address}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('address')}" th:errors="${address}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="phone">Phone:</label>
                                         <div class="input-group">
-                                            <input type="text" id="phone" th:field="*{phone}" class="form-control">
+                                            <input type="text" id="phone" th:field="${phone}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('phone')}" th:errors="${phone}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="department">Department:</label>
                                         <div class="input-group">
-                                            <input type="text" id="department" th:field="*{department}" class="form-control">
+                                            <input type="text" id="department" th:field="${department}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('department')}" th:errors="*{department}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('department')}" th:errors="${department}"></span>
                                         </div>
 
 
                                         <label class="m-t-20" for="twitter">Twitter:</label>
                                         <div class="input-group">
-                                            <input type="url" id="twitter" th:field="*{twitter}" class="form-control">
+                                            <input type="url" id="twitter" th:field="${twitter}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('twitter')}" th:errors="*{twitter}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('twitter')}" th:errors="${twitter}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="facebook">Facebook:</label>
                                         <div class="input-group">
-                                            <input type="url" id="facebook" th:field="*{facebook}" class="form-control">
+                                            <input type="url" id="facebook" th:field="${facebook}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('facebook')}" th:errors="*{facebook}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('facebook')}" th:errors="${facebook}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="youtube">Youtube:</label>
                                         <div class="input-group">
-                                            <input type="url" id="youtube" th:field="*{youtube}" class="form-control">
+                                            <input type="url" id="youtube" th:field="${youtube}" class="form-control">
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('youtube')}" th:errors="*{youtube}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('youtube')}" th:errors="${youtube}"></span>
                                         </div>
 
                                         <label class="m-t-20" for="bio">Bio:</label>
                                         <div class="input-group">
-                                            <textarea class="textarea_editor form-control" id="bio" rows="15" placeholder="Enter text ..." th:field="*{bio}"></textarea>
+                                            <textarea class="textarea_editor form-control" id="bio" rows="15" placeholder="Enter text ..." th:field="${bio}"></textarea>
                                         </div>
                                         <div class="input-group">
-                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('bio')}" th:errors="*{bio}"></span>
+                                            <span class="text-danger font-weight-bold" th:if="${#fields.hasErrors('bio')}" th:errors="${bio}"></span>
                                         </div>
 
                                         <button type="submit" class="btn btn-primary m-t-20">Update</button>
@@ -271,21 +271,21 @@
 <script th:inline="javascript">
     var home = /*[[${home}]]*/ null;
 </script>
-<script th:src="@{/js/library/jquery-3.2.1.min.js}" type="text/javascript">></script>
+<script th:src="@{/js/library/jquery-3.2.1.min.js}" type="text/javascript"></script>
 <!--    &lt;!&ndash; Bootstrap tether Core JavaScript &ndash;&gt;-->
-<script th:src="@{/js/library/popper.min.js}" type="text/javascript">></script>
-<script th:src="@{/js/library/bootstrap.min.js}" type="text/javascript">></script>
+<script th:src="@{/js/library/popper.min.js}" type="text/javascript"></script>
+<script th:src="@{/js/library/bootstrap.min.js}" type="text/javascript"></script>
 <!--    &lt;!&ndash; slimscrollbar scrollbar JavaScript &ndash;&gt;-->
-<script th:src="@{/js/library/perfect-scrollbar.jquery.min.js}" type="text/javascript">></script>
+<script th:src="@{/js/library/perfect-scrollbar.jquery.min.js}" type="text/javascript"></script>
 <!--Wave Effects -->
-<script th:src="@{/js/library/waves.js}" type="text/javascript">></script>
+<script th:src="@{/js/library/waves.js}" type="text/javascript"></script>
 <!--Menu sidebar -->
-<script th:src="@{/js/library/sidebarmenu.js}" type="text/javascript">></script>
+<script th:src="@{/js/library/sidebarmenu.js}" type="text/javascript"></script>
 <!--stickey kit -->
 <script th:src="@{/js/library/sticky-kit.min.js}"></script>
-<script th:src="@{/js/library/jquery.sparkline.min.js}" type="text/javascript">></script>
+<script th:src="@{/js/library/jquery.sparkline.min.js}" type="text/javascript"></script>
 <!--Custom JavaScript -->
-<script th:src="@{/js/library/custom.min.js}" type="text/javascript">></script>
+<script th:src="@{/js/library/custom.min.js}" type="text/javascript"></script>
 <!-- Editable -->
 
 <script th:src="@{/js/library/wysihtml5-0.3.0.js}"></script>

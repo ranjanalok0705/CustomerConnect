@@ -29,7 +29,7 @@ public class UserProfileController {
     }
 
 
-    @GetMapping("")
+    @GetMapping
     public String showProfileInfo(Model model, Authentication authentication) {
         int userId = authenticationUtils.getLoggedInUserId(authentication);
         User user = userService.findById(userId);
@@ -37,7 +37,7 @@ public class UserProfileController {
 
         model.addAttribute("user", user);
         model.addAttribute("profile",profile);
-        return "profile";
+        return "redirect:/employee/profile";
     }
 
     @PostMapping("/update")
